@@ -30,43 +30,36 @@ Program to create and design an android application for performing different ani
 Developed by: Amrutha Rajsheker
 RegisterNumber:  212222110003
 ```
+
 ## MainActivity.java:
 ```
 package com.example.exp6;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Bundle;
-
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.view.View;
 
-
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void clockwise(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.myanimation);
         image.startAnimation(animation);
     }
-
     public void zoom(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.clockwise);
         image.startAnimation(animation1);
     }
-
     public void fade(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 =
@@ -74,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                         R.anim.fade);
         image.startAnimation(animation1);
     }
-
     public void blink(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 =
@@ -82,9 +74,6 @@ public class MainActivity extends AppCompatActivity {
                         R.anim.blink);
         image.startAnimation(animation1);
     }
-
-
-
     public void slide(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation1 =
@@ -92,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
         image.startAnimation(animation1);
     }
 }
-
 ```
+
 ## activity_main.xml:
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
     android:paddingTop="20dp"
     android:paddingBottom="20dp"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="20dp"
@@ -185,12 +172,12 @@ public class MainActivity extends AppCompatActivity {
 
 </RelativeLayout>
 ```
+
 ## zoom.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillAfter="true" >
-
     <scale
         android:duration="500"
         android:fromXScale="1.0"
@@ -199,8 +186,8 @@ public class MainActivity extends AppCompatActivity {
         android:toXScale="1.0"
         android:toYScale="0.0" />
 </set>
-
 ```
+
 ## slide.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -216,11 +203,11 @@ public class MainActivity extends AppCompatActivity {
 </set>
 
 ```
+
 ## clockwise.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-
     <rotate xmlns:android="http://schemas.android.com/apk/res/android"
         android:fromDegrees="0"
         android:toDegrees="360"
@@ -238,14 +225,13 @@ public class MainActivity extends AppCompatActivity {
         android:duration="5000" >
     </rotate>
 </set>
-
 ```
+
 ## fade.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/accelerate_interpolator">
-
     <alpha
         android:duration="1000"
         android:fromAlpha="0"
@@ -256,9 +242,9 @@ public class MainActivity extends AppCompatActivity {
         android:fromAlpha="1"
         android:startOffset="2000"
         android:toAlpha="0" />
-
 </set>
 ```
+
 ## blink.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -271,6 +257,7 @@ public class MainActivity extends AppCompatActivity {
         android:repeatCount="infinite"/>
 </set>
 ```
+
 ## myanimation.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -297,6 +284,7 @@ public class MainActivity extends AppCompatActivity {
     </scale>
 </set>
 ```
+
 ## Output:
 
 ![Screenshot 2024-04-26 203924](https://github.com/SowmyaVisvanathan/EX_6_ANIMATION_GIT/assets/119475775/8f5086ac-474c-471c-b6b1-4a2695a1d095)
