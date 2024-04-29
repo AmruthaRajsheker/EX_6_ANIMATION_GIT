@@ -137,7 +137,8 @@ public class MainActivity extends AppCompatActivity {
         android:layout_alignTop="@+id/button"
         android:layout_centerHorizontal="true"
         android:onClick="zoom"/>
-
+```
+```
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
