@@ -26,10 +26,8 @@ Step 8: Save and run the application.
 
 ## Program:
 
-Program to create and design an android application for performing different animations
-
-Developed by: Amrutha Rajsheker
-
+Program to create and design an android application for performing different animations </br>
+Developed by: Amrutha Rajsheker </br>
 RegisterNumber:  212222110003
 
 
@@ -99,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
     android:paddingTop="20dp"
     android:paddingBottom="20dp"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         android:textSize="35dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        />
+    />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="20dp"
