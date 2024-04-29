@@ -25,11 +25,13 @@ Step 7: Perform animation function using AnimationUtil class in MainActivity.jav
 Step 8: Save and run the application.
 
 ## Program:
-```
+
 Program to create and design an android application for performing different animations
+
 Developed by: Amrutha Rajsheker
+
 RegisterNumber:  212222110003
-```
+
 
 ## MainActivity.java:
 ```
@@ -41,7 +43,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.view.View;
-
+```
+```
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
