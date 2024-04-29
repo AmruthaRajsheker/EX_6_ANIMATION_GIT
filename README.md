@@ -1,4 +1,4 @@
-## Ex_06_Animation
+# Ex_06_Animation
 Develop an application to perform different animations for the given image on the Screen
 
 ## AIM:
